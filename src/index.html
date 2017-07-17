@@ -9,6 +9,7 @@
 
 <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" crossorigin="anonymous">
+        <link href="app.css" rel="stylesheet"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -22,7 +23,7 @@
     <body>      
         <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
-                <a href="#" class="navbar-brand">Ui router</a>
+                <a href="#" class="navbar-brand pull-left"><img class="navbar-image" src="images/angular1.png"/></a>
             </div>
             <ul class="nav navbar-nav">
                 <li >
@@ -33,9 +34,13 @@
                 </li>
             </ul>
         </nav>
+       
         <div  ui-view></div>
 <!--    <ui-view></ui-view>-->
         
         <script src="app.js"></script>
+        <script src="HomeController.js"></script>
+        <script src="ProductDetailsController.js"></script>
+        <script src="ProductsService.js"></script>
     </body>
 </html>
