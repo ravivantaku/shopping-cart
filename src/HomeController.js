@@ -1,7 +1,13 @@
 angular.module("shopping-cart")
         .controller("HomeController", function($scope, productsService) {
 
-            $scope.products = productsService.products;
+            //$scope.products = productsService.products;
+           productsService.getProducts().then(function(result){
+                $scope.products =  result;
+                productsService.saveProduct();
+           }).catch(function(error){
+               console.log(error);
+           });
             $scope.selectedProducts = [];
             $scope.buyProduct = function(item) {
                 console.log("before select product", $scope.selectedProducts);
