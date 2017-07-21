@@ -1,0 +1,36 @@
+{
+  "name": "shopping kart",
+  "version": "1.0.0",
+  "description": "sample app in angular 1.x",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ravivantaku/shopping-cart.git"
+  },
+  "author": "ravi vantaku",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravivantaku/shopping-cart/issues"
+  },
+  "homepage": "https://github.com/ravivantaku/shopping-cart#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-size": "^2.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "jshint": "^2.9.5",
+    "run-sequence": "^2.0.0"
+  }
+}
