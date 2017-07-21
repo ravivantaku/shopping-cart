@@ -2,117 +2,31 @@
   "products": [
     {
       "id": 1,
-      "product_name": "Angular 1.x pdf book",
-      "product_img": "images/angular1.png",
-      "product_category": "Books",
-      "product_price": 1000
+      "productName": "Angular 1.x pdf book",
+      "productImg": "images/angular1.png",
+      "productCategory": "Books",
+      "productPrice": 1000,
+      "isChecked": false,
+      "quantity":0
     },
     {
       "id": 2,
-      "product_name": "Iphone 7",
-      "product_img": "images/Apple-iPhone-5s.jpg",
-      "product_category": "Phones",
-      "product_price": 50000
+      "productName": "Iphone 7",
+      "productImg": "images/Apple-iPhone-5s.jpg",
+      "productCategory": "Phones",
+      "productPrice": 50000,
+      "isChecked": false,
+      "quantity":0
     },
     {
       "id": 3,
-      "product_name": "Soney TV",
-      "product_img": "images/soney.jpg",
-      "product_category": "Television",
-      "product_price": 45000
-    },
-    [
-      {
-        "id": 1,
-        "product_name": "Angular 1.x pdf book",
-        "product_img": "images/angular1.png",
-        "product_category": "Books",
-        "product_price": 1000
-      },
-      {
-        "id": 2,
-        "product_name": "Iphone 7",
-        "product_img": "images/Apple-iPhone-5s.jpg",
-        "product_category": "Phones",
-        "product_price": 50000
-      },
-      {
-        "id": 3,
-        "product_name": "Soney TV",
-        "product_img": "images/soney.jpg",
-        "product_category": "Television",
-        "product_price": 45000
-      }
-    ],
-    [
-      {
-        "id": 1,
-        "product_name": "Angular 1.x pdf book",
-        "product_img": "images/angular1.png",
-        "product_category": "Books",
-        "product_price": 1000
-      },
-      {
-        "id": 2,
-        "product_name": "Iphone 7",
-        "product_img": "images/Apple-iPhone-5s.jpg",
-        "product_category": "Phones",
-        "product_price": 50000
-      },
-      {
-        "id": 3,
-        "product_name": "Soney TV",
-        "product_img": "images/soney.jpg",
-        "product_category": "Television",
-        "product_price": 45000
-      }
-    ],
-    [
-      {
-        "id": 1,
-        "product_name": "Angular 1.x pdf book",
-        "product_img": "images/angular1.png",
-        "product_category": "Books",
-        "product_price": 1000
-      },
-      {
-        "id": 2,
-        "product_name": "Iphone 7",
-        "product_img": "images/Apple-iPhone-5s.jpg",
-        "product_category": "Phones",
-        "product_price": 50000
-      },
-      {
-        "id": 3,
-        "product_name": "Soney TV",
-        "product_img": "images/soney.jpg",
-        "product_category": "Television",
-        "product_price": 45000
-      }
-    ],
-    [
-      {
-        "id": 1,
-        "product_name": "Angular 1.x pdf book",
-        "product_img": "images/angular1.png",
-        "product_category": "Books",
-        "product_price": 1000
-      },
-      {
-        "id": 2,
-        "product_name": "Iphone 7",
-        "product_img": "images/Apple-iPhone-5s.jpg",
-        "product_category": "Phones",
-        "product_price": 50000
-      },
-      {
-        "id": 3,
-        "product_name": "Soney TV",
-        "product_img": "images/soney.jpg",
-        "product_category": "Television",
-        "product_price": 45000
-      }
-    ]
+      "productName": "Soney TV",
+      "productImg": "images/soney.jpg",
+      "productCategory": "Television",
+      "productPrice": 45000,
+      "isChecked": false,
+      "quantity":0
+    }
   ],
   "users": [
     {

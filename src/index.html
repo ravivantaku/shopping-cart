@@ -5,47 +5,43 @@
         <title>Shopping Cart</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  crossorigin="anonymous">
 
-<!-- Optional theme -->
+        <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" crossorigin="anonymous">
         <link href="app.css" rel="stylesheet"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!--        <script data-require="angular-route@*" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular-route.js"></script>-->
+        <!--        <script data-require="angular-route@*" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular-route.js"></script>-->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.0/lodash.min.js"></script>
-        <style>
+        <style type="text/css">
+            [ng-cloak] {display: none;}
             .active { color: red; font-weight: bolder; }
         </style>
     </head>
     <body>      
-        <nav class="navbar navbar-inverse" role="navigation">
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand pull-left"><img class="navbar-image" src="images/angular1.png"/></a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li >
-                    <a ui-sref="home" ui-sref-active="active">Home</a>
-                </li>
-                <li>
-                    <a ui-sref="about" ui-sref-active="active">About</a>
-                </li>
-                <li>
-                    <a ui-sref="register" ui-sref-active="active">Register</a>
-                </li>
-            </ul>
-            <div><a ui-sref="cart" class="btn btn-primary btn-sm pull-right">Cart <span class="badge">0</span></a></div>
-        </nav>
        
-        <div  ui-view></div>
-<!--    <ui-view></ui-view>-->
-        
+        <div id="header" ui-view="navbar" style="padding-bottom: 10px;"></div>
+        <div style="margin-left:10px; margin-right: 10px;">
+            <div class="container-fluid">  
+                <div id="content" class="row" ui-view="content">
+                    Loading...
+                </div>  
+            </div>
+        </div>
+        <!--        <div  ui-view></div>-->
+        <!--    <ui-view></ui-view>-->
+
         <script src="app.js"></script>
         <script src="HomeController.js"></script>
         <script src="ProductDetailsController.js"></script>
         <script src="ProductsService.js"></script>
         <script src="RegisterController.js"></script>
+        <script src="NavbarController.js"></script>
+        <script src="CartService.js"></script>
+        <script src="CartController.js"></script>
+        <script src="LoginController.js"></script>
     </body>
 </html>

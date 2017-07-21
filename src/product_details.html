@@ -1,15 +1,15 @@
 <div>
-    <div ng-include="'nav.html'"></div>
+<!--    <div ng-include="'nav.html'"></div>-->
     <h3>Product Details</h3>  <button ng-click="goToHome()" class="btn btn-primary btn-sm">go to home</button>  
 <!--    <a ui-sref="home">Go to home</a>-->
     <div class="row">
         <div class="col-md-1 col-md-offset-2">
-            <div><img ng-src="{{product.product_img}}"/></div>
+            <div><img ng-src="{{product.productImg}}"/></div>
         </div>
         <div class="col-md-2">
-            <h4>{{product.product_name}}</h4>
-            <p>{{product.product_description}}</p>
-            <p>Price: {{product.product_price}}</p>
+            <h4>{{product.productName}}</h4>
+            <p>{{product.productDescription}}</p>
+            <p>Price: {{product.productPrice}}</p>
         </div>
     </div>
 </div>

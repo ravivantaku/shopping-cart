@@ -1,5 +1,5 @@
 
-<div ng-include="'nav.html'"></div>
+<!--<div ng-include="'nav.html'"></div>-->
 <div class="text-center">
     <h3> Products List</h3>
 <!--    <div ><a  class="btn btn-primary pull-right">Goto Cart</a></div> -->
@@ -16,9 +16,9 @@
             </thead>
             <tbody>
                 <tr  ng-class="{'success': bought(product.id), 'custom-calss': bought(product.id)}" ng-repeat="product in products">                    
-                    <td><a ui-sref="productDetails({productId: product.id})"><img class="image" ng-src="{{product.product_img}}"/> {{product.product_name}}</a></td>
-                    <td>{{product.product_price}}</td>
-                    <td>{{product.product_description}}</td>
+                    <td><a ui-sref="productDetails({productId: product.id})"><img class="image" ng-src="{{product.productImg}}"/> {{product.productName}}</a></td>
+                    <td>{{product.productPrice}}</td>
+                    <td>{{product.productDescription}}</td>
                     <td>                        
                         <button class="btn btn-primary" ng-disabled="bought(product.id)" ng-click="buyProduct(product)">Buy</button>
                     </td>

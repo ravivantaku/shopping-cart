@@ -2,28 +2,37 @@
     <h3>Cart List</h3>
 </div>
 <button class="btn btn-primary pull-right" ng-disabled="hideButton" ng-click="deleteCartItems()">Delete</button>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr ng-repeat="item in carts">
-            <td><input type="checkbox" ng-model="item.isChecked"/></td>
-            <td>{{item.name}}</td>
-            <td>{{item.price}}</td>
-            <td><input ng-init="item.quantity = 1" ng-model="item.quantity"/></td>
-            <td>{{item.price * item.quantity}}</td>            
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td><div class="pull-right"> Total: {{total()}}</div></td>
-        </tr>
-    </tfoot>
-</table>
+<div class="container">
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in cartItems">
+                    <td><input type="checkbox" ng-model="item.isChecked"/></td>
+                    <td>{{item.productName}}</td>
+                    <td>{{item.productPrice}}</td>
+                    <td><input ng-init="item.quantity = 1" ng-model="item.quantity"/></td>
+                    <td>{{item.productPrice * item.quantity| currency}}</td>            
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><div> Grand Total: {{total()}}</div></td>
+                </tr>
+            </tfoot>
+        </table>
+        <!--        <div class="pull-right"> Total: {{total()}}</div>-->
+    </div>
+</div>
